@@ -7,8 +7,7 @@ body {
 }
 
 .header,
-.hero,
-.footer {
+.hero {
     background-color: #1f2937;
 }
 
@@ -22,7 +21,9 @@ body {
 ul {
     list-style-type: none;
     display: flex;
-    gap: 16px;
+    gap: 24px;
+    margin: 0;
+    padding: 16px 160px;
 }
 
 h1 {
@@ -37,23 +38,91 @@ h1 {
     color: #e5e7eb;
 }
 
+.hero {
+    display: flex;
+    padding: 120px 160px;
+}
+
 button,
 .signup {
     background-color: #3882f6;
+    color: #e5e7eb;
+}
+
+button {
+    font-weight: 700;
+    font-size: 18px;
+    padding: 8px 32px;
+    border-radius: 13px;
+    border: none;
+}
+
+.button-up {
+    margin-top: 10px;
+}
+
+.button-down {
+    border: 2px solid #e5e7eb;
 }
 
 h2 {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.pics {
+    display: flex;
+    padding: 24px 240px 100px;
+    gap: 24px;
+}
+
+.subtext {
+    color: #1f2937;
+    text-align: center;
 }
 
 .quote {
     background-color: #e5e7eb;
+    padding: 64px 280px;
 }
 
 .quote-text {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
+}
+
+.quote-author {
+    font-weight: 700;
+    color: #1f2937;
+    /* push this to the end of the line*/
+}
+
+.signup {
+    margin: 60px 240px;
+    padding: 32px 40px;
+    display: flex;
+}
+
+.signup-text {
+    color: #e5e7eb;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
 }

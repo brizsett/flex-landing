@@ -30,6 +30,7 @@ h1 {
     font-size: 48px;
     font-weight: 900;
     color: #f9faf8;
+    margin: 0;
 }
 
 .herosub,
@@ -41,6 +42,10 @@ h1 {
 .hero {
     display: flex;
     padding: 120px 160px;
+}
+
+.hero-left {
+    padding-right: 60px;
 }
 
 button,
@@ -61,10 +66,6 @@ button {
     margin-top: 10px;
 }
 
-.button-down {
-    border: 2px solid #e5e7eb;
-}
-
 h2 {
     font-size: 36px;
     font-weight: 900;
@@ -81,19 +82,26 @@ h2 {
 }
 
 .pics {
-    display: flex;
     padding: 24px 240px 100px;
-    gap: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+.item {
+    max-width: 150px;
 }
 
 .subtext {
     color: #1f2937;
-    text-align: center;
+    gap: 24px;
 }
 
 .quote {
     background-color: #e5e7eb;
-    padding: 64px 280px;
+    padding: 100px 280px;
 }
 
 .quote-text {
@@ -104,8 +112,9 @@ h2 {
 
 .quote-author {
     font-weight: 700;
+    font-size: 24px;
     color: #1f2937;
-    /* push this to the end of the line*/
+    text-align: right;
 }
 
 .signup {
@@ -113,10 +122,25 @@ h2 {
     padding: 32px 40px;
     display: flex;
     border-radius: 13px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .signup-text {
     color: #e5e7eb;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+.signup-text p {
+    margin-top: 0;
+}
+
+.button-down {
+    border: 2px solid #e5e7eb;
+    padding: 8px 32px;
 }
 
 .footer {
@@ -136,4 +160,5 @@ h2 {
 .birdpic {
     width: 150px;
     height: 100%;
+    border-radius: 10px;
 }
